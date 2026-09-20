@@ -1,0 +1,51 @@
+{
+  "name": "@sendflit/email-components",
+  "version": "1.0.0",
+  "description": "Email-safe React components for building SendFlit templates — bulletproof table-based HTML, no heavyweight rendering dependency (uses react-dom/server directly).",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --test test/"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "typescript": "^5.5.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "sendflit",
+    "email",
+    "react-email",
+    "email templates",
+    "jsx",
+    "transactional email"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sendflit/sendflit-react-email"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
